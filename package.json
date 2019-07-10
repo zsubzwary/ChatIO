@@ -9,7 +9,8 @@
   "author": "Eagle",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "*",
-    "express": "*"
+    "express": "*",
+    "jquery": "^3.4.1",
+    "socket.io": "*"
   }
 }
