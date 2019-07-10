@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
   <!-- <script src="/node_modules/socket.io/lib/socket.js"></script>
   <script src="/node_modules/jquery/src/jquery.js"></script> -->
-  <title>IO Chat</title>
+  <title>Z-ChatIO | A Test Project by Zaki</title>
 </head>
 <body>
   <h1>Hi</h1>
@@ -35,11 +35,12 @@ $(function () {
     console.log('Submited');
     socket.emit('send message', $message.val());
     $message.val('');
-  })
+  });
 
   socket.on('new message', function (data) {
+    console.log('data');
     $chat.append(`<p>${data.msg}</p>`);
-  })
+  });
 
 
 
